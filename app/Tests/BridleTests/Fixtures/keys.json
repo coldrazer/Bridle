@@ -1,0 +1,18 @@
+{
+  "keys": [
+    {
+      "id": "1297a2a2f5f8",
+      "name": "Laptop",
+      "hint": "brdl_5F4jH\u2026",
+      "created_at": 1794446212.458416,
+      "revoked": false,
+      "rpm_limit": 60,
+      "daily_token_limit": null,
+      "requests_total": 0,
+      "tokens_total": 0,
+      "tokens_today": 0,
+      "usage_day": "",
+      "last_used_at": null
+    }
+  ]
+}

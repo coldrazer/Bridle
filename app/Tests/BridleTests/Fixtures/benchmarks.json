@@ -1,0 +1,18 @@
+{
+  "benchmarks": [
+    {
+      "id": "7e5878b6ab",
+      "repo": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+      "draft": null,
+      "chip": "x86_64",
+      "prompt_tokens": 32,
+      "generated_tokens": 16,
+      "prompt_tps": 3.7,
+      "generation_tps": 2.7,
+      "time_to_first_token_ms": 8831,
+      "peak_memory_gb": 0.32,
+      "load_seconds": 1.95,
+      "created_at": 1794446227.2052383
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+import Foundation
+import ServiceManagement
+
+/// Launch at login via SMAppService (macOS 13+). Works for the bundled Bridle.app, not `swift run`.
+enum LoginItem {
+    static var isEnabled: Bool { SMAppService.mainApp.status == .enabled }
+
+    static var requiresApproval: Bool { SMAppService.mainApp.status == .requiresApproval }
+
+    static func set(_ enabled: Bool) throws {
+        if enabled {
+            if SMAppService.mainApp.status != .enabled { try SMAppService.mainApp.register() }
+        } else if SMAppService.mainApp.status == .enabled {
+            try SMAppService.mainApp.unregister()
+        }
+    }
+
+    static func openSystemSettings() {
+        SMAppService.openSystemSettingsLoginItems()
+    }
+}

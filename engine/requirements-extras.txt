@@ -1,0 +1,4 @@
+# Optional features; install with `scripts/bridle extras all` or from the app.
+mlx-vlm>=0.3        # vision models
+mlx-embeddings>=0.1 # /v1/embeddings
+mlx-audio>=0.2      # /v1/audio/transcriptions

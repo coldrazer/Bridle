@@ -1,0 +1,5 @@
+title: Bridle
+description: Your Mac is the AI server — private MLX inference for Apple silicon, from one M-series Mac to a Thunderbolt 5 mesh.
+theme: jekyll-theme-minimal
+logo: assets/banner.png
+show_downloads: true

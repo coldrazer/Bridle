@@ -1,0 +1,12 @@
+{
+  "presets": [
+    {
+      "name": "Coder",
+      "model": "",
+      "system_prompt": "You write code.",
+      "temperature": 0.2,
+      "top_p": null,
+      "max_tokens": 512
+    }
+  ]
+}

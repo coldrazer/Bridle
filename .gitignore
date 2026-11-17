@@ -1,0 +1,13 @@
+.build/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.DS_Store
+.swiftpm/
+.ruff_cache/
+# Bundled model weights are fetched, never committed:
+#   scripts/fetch_aria.sh / scripts/fetch_onyx.sh (verified against .bridle.json)
+assets/Aria/
+assets/OnyxWhisper/

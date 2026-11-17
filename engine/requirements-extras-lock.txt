@@ -1,0 +1,23 @@
+# Locked optional extras (vision/embeddings/speech), generated the same
+# way as requirements-lock.txt. Install after the core lock.
+charset-normalizer==3.5.2
+datasets==5.2.0
+dill==0.4.1
+miniaudio==1.73
+mlx-audio==0.6.5
+mlx-embeddings==0.1.0
+mlx-vlm==0.7.12
+multiprocess==0.70.19
+opencv-python==5.0.0.93
+packaging==26.3
+pandas==3.1.1
+pillow==13.0.0
+pyarrow==26.0.1
+python-dateutil==4.0.0
+requests==2.34.2
+scipy==1.17.1
+sounddevice==0.5.6
+tzdata==2026.6
+urllib3==2.8.0
+websockets==17.4
+xxhash==4.1.0
