@@ -1,0 +1,9 @@
+{
+  "repo": "mlx-community/Qwen3-0.6B-4bit",
+  "draft": null,
+  "required_bytes": 1886521979,
+  "available_bytes": 7673163085,
+  "budget_bytes": 5636133478,
+  "verdict": "ok",
+  "reason": ""
+}

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bridle-engine"
+version = "0.2.0"
+description = "Private local inference server for Apple silicon, built on MLX."
+requires-python = ">=3.11"
+dependencies = [
+    "mlx>=0.25",
+    "mlx-lm>=0.28",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "httpx>=0.27",
+    "huggingface_hub>=0.24",
+    "psutil>=5.9",
+    "llguidance>=1.0",
+    "jsonschema>=4.0",
+    "zeroconf>=0.130",
+    "cryptography>=42",
+    "python-multipart>=0.0.9",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+vision = ["mlx-vlm>=0.3"]
+embeddings = ["mlx-embeddings>=0.1"]
+speech = ["mlx-audio>=0.2"]
+
+[project.scripts]
+bridle-engine = "bridle_engine.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["bridle_engine*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

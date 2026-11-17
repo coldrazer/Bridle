@@ -1,0 +1,7 @@
+# Speech runtime for the bundled Onyx model (Aria's voice input), installed
+# with the core lock on every setup so Talk works out of the box.
+# Pins match requirements-lock.txt / requirements-extras-lock.txt.
+mlx-audio==0.6.5
+miniaudio==1.73
+scipy==1.17.1
+sounddevice==0.5.6

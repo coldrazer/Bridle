@@ -1,0 +1,109 @@
+{
+  "version": "0.1.0",
+  "server": {
+    "state": "running",
+    "mode": "standalone",
+    "host": "127.0.0.1",
+    "port": 37667,
+    "endpoint": "http://127.0.0.1:37667",
+    "https_endpoint": null,
+    "tls_fingerprint": null,
+    "lan_address": "192.0.2.2",
+    "api_key_required": true,
+    "auto_load": true,
+    "started_at": 1794446150.1793911,
+    "uptime_seconds": 102,
+    "models_dir": "/home/claude/scratch/models",
+    "ollama_api": true,
+    "bonjour": true
+  },
+  "machine": {
+    "hostname": "vm",
+    "model_name": "Linux host",
+    "kind": "other",
+    "chip": "x86_64",
+    "memory_total_bytes": 8412139520,
+    "disk_total_bytes": 270553174016,
+    "os_version": "Linux 6.18.44-fc-v378",
+    "thunderbolt_generation": null,
+    "thunderbolt_ports": null,
+    "rdma": "unavailable"
+  },
+  "stats": {
+    "memory_used_bytes": 1058906112,
+    "memory_total_bytes": 8412139520,
+    "cpu_percent": 45.9,
+    "disk_free_bytes": 26201305088,
+    "mlx": {
+      "active_bytes": 315547552,
+      "peak_bytes": 324349016
+    }
+  },
+  "model": {
+    "state": "ready",
+    "loading_repo": "",
+    "error": "",
+    "loaded": {
+      "repo": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+      "kind": "text",
+      "size_bytes": 289598797,
+      "context_length": 32768,
+      "load_seconds": 1.95,
+      "loaded_at": 1794446152.180373,
+      "last_used": 1794446237.340721,
+      "draft": null,
+      "supports_tools": true,
+      "supports_reasoning": false
+    },
+    "unloaded_reason": "",
+    "last_unloaded": null,
+    "aux": {},
+    "metrics": {
+      "requests_total": 4,
+      "requests_failed": 0,
+      "tokens_generated": 46,
+      "last_generation_tps": 3.5,
+      "last_prompt_tps": 3.4,
+      "queue_depth": 0,
+      "active": false,
+      "active_requests": 0,
+      "batched_requests": 0,
+      "cached_prompt_tokens": 0,
+      "draft_accepted_tokens": 0
+    }
+  },
+  "downloads": [
+    {
+      "id": "94e80f933ada",
+      "repo": "mlx-community/Llama-3.2-1B-Instruct-4bit",
+      "state": "cancelled",
+      "total_bytes": 712575975,
+      "done_bytes": 136316001,
+      "fraction": 0.19130030450437233,
+      "current_file": "model.safetensors",
+      "revision": "08231374eeacb049a0eade7922910865b8fce912",
+      "error": "",
+      "bytes_per_second": 0,
+      "destination": "/home/claude/scratch/models/mlx-community/Llama-3.2-1B-Instruct-4bit",
+      "started_at": 1794446248.387882,
+      "finished_at": 1794446251.7152038
+    }
+  ],
+  "features": {
+    "vision": true,
+    "embeddings": true,
+    "speech": true,
+    "structured_output": true,
+    "bonjour": true,
+    "tls": true
+  },
+  "peers": 0,
+  "usage": {
+    "requests": 1,
+    "completion_tokens": 22,
+    "prompt_tokens": 172,
+    "errors": 0,
+    "avg_tps": 2.7,
+    "window_seconds": 86400
+  }
+}

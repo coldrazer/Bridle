@@ -1,0 +1,33 @@
+{
+  "id": "99cd5939ca",
+  "prompt": "Say hi.",
+  "system": "",
+  "state": "done",
+  "created_at": 1794446227.2512004,
+  "runs": [
+    {
+      "repo": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+      "state": "done",
+      "text": "Hello! How may",
+      "reasoning": "",
+      "error": "",
+      "completion_tokens": 4,
+      "generation_tps": 3.1,
+      "prompt_tps": 3.6,
+      "peak_memory_gb": 0.32,
+      "seconds": 10.09
+    },
+    {
+      "repo": "mlx-community/Qwen2.5-0.5B-Instruct-4bit",
+      "state": "done",
+      "text": "Hello! How may",
+      "reasoning": "",
+      "error": "",
+      "completion_tokens": 4,
+      "generation_tps": 3.5,
+      "prompt_tps": 3.4,
+      "peak_memory_gb": 0.32,
+      "seconds": 10.43
+    }
+  ]
+}

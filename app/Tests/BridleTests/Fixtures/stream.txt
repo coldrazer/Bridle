@@ -1,0 +1,10 @@
+data: {"id": "chatcmpl-bd60b92132d04df38534a486", "object": "chat.completion.chunk", "created": 1794446212, "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit", "choices": [{"index": 0, "delta": {"role": "assistant", "content": ""}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-bd60b92132d04df38534a486", "object": "chat.completion.chunk", "created": 1794446212, "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit", "choices": [{"index": 0, "delta": {"tool_calls": [{"id": "call_ce08e18dd4dd464e902e6a9c", "type": "function", "function": {"name": "get_weather", "arguments": "{\"city\": \"Paris\"}"}, "index": 0}]}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-bd60b92132d04df38534a486", "object": "chat.completion.chunk", "created": 1794446212, "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit", "choices": [{"index": 0, "delta": {}, "finish_reason": "tool_calls"}]}
+
+data: {"id": "chatcmpl-bd60b92132d04df38534a486", "object": "chat.completion.chunk", "created": 1794446212, "model": "mlx-community/Qwen2.5-0.5B-Instruct-4bit", "choices": [], "usage": {"prompt_tokens": 172, "completion_tokens": 22, "total_tokens": 194, "prompt_tokens_details": {"cached_tokens": 0}}, "bridle": {"prompt_tps": 3.8, "generation_tps": 2.7, "peak_memory_gb": 0.33, "cached_tokens": 0, "draft_accepted_tokens": 0, "batched": false}}
+
+data: [DONE]
+

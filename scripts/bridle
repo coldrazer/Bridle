@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Offline console entry point: every engine job works from the terminal without the app.
+#   scripts/bridle models                         catalog + what fits this Mac
+#   scripts/bridle download <owner/name>          resumable, SHA-256 verified
+#   scripts/bridle chat <repo> [--draft <repo>]   terminal chat (speculative decoding with --draft)
+#   scripts/bridle serve --host 0.0.0.0           OpenAI + Ollama compatible server
+#   scripts/bridle bench <repo>                   prompt/generation speed, saved to history
+#   scripts/bridle embed <repo> "text" …          embeddings
+#   scripts/bridle transcribe <repo> file.wav     speech to text (--format srt|vtt|json)
+#   scripts/bridle keys create "Gio's laptop" --rpm 60
+#   scripts/bridle presets set Coder --model <repo> --system "You write code." --temperature 0.2
+#   scripts/bridle requests                       recent request history
+#   scripts/bridle settings batching=false idle_unload_minutes=15
+#   scripts/bridle extras vision|embeddings|speech|all
+#   scripts/bridle info | delete <owner/name>
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+SUPPORT="${BRIDLE_HOME:-$HOME/Library/Application Support/com.bridle.app}"
+PY="${BRIDLE_PYTHON:-$SUPPORT/engine-venv/bin/python3}"
+if [ ! -x "$PY" ]; then
+  echo "Engine not installed. Run: $ROOT/scripts/setup_engine.sh" >&2
+  exit 1
+fi
+PYTHONPATH="$ROOT/engine${PYTHONPATH:+:$PYTHONPATH}" exec "$PY" -m bridle_engine "$@"
